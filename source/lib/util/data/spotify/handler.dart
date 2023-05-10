@@ -1,4 +1,5 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:spotify_sdk/models/player_context.dart';
 import 'package:spotify_sdk/spotify_sdk.dart';
 
 ///Spotify Handler
@@ -30,5 +31,13 @@ class SpotifyHandler {
     );
 
     return accessToken;
+  }
+
+  ///Spotify Player
+  static Stream<PlayerContext> player() {
+    //Spotify Client
+    final client = SpotifySdk.subscribePlayerContext();
+
+    return client;
   }
 }
