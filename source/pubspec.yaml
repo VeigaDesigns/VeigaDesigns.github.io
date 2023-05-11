@@ -21,6 +21,10 @@ dependencies:
   shared_preferences: ^2.1.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  google_fonts: ^4.0.4
+  easy_splash_screen: ^1.0.4
+  hoverover: ^0.1.1
+  lottie: ^2.3.2
 
 dev_dependencies:
   flutter_test:
@@ -36,3 +40,27 @@ flutter:
 
     # Environment Variables
     - assets/.env
+
+    # Animations
+    - assets/animations/
+    - assets/animations/lottie/
+
+    # Images
+    - assets/images/
+
+  # Fonts
+  fonts:
+
+    - family: SBZ
+
+      fonts:
+      
+        - asset: assets/fonts/sbz.otf
+
+    
+    - family: KILO
+
+      fonts:
+
+        - asset: assets/fonts/kilo.otf
+    
